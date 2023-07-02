@@ -2,6 +2,8 @@
  * 1. CREATE BASIC EXPRESS SERVER
  */
 const express = require("express");
+var bodyParser = require("body-parser");
+
 const httpServer = express();
 
 //IMPORTING APPS
@@ -11,14 +13,18 @@ const viewsApp = require("./viewsApp");
 // set the view engine to ejs
 httpServer.set("view engine", "ejs");
 
+// INJECTING MIDDLEWARES
+// CONFIGURE BODY PARSER MIDDLE WARE
+httpServer.use(bodyParser.json());
+
 const PORT = 5000;
 
 httpServer.listen(PORT, "localhost", () => {
   console.log("Server started");
 });
 
-// API
+// API SERVER
 httpServer.use("/api", app);
 
-// VIEWS
+// WEB SERVER
 httpServer.use("/", viewsApp);
