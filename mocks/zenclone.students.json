@@ -1,0 +1,94 @@
+[{
+  "_id": {
+    "$oid": "644b522b9636d67e04a52658"
+  },
+  "studentName": "Abishek",
+  "studentEmail": "abishek@gmail.com",
+  "studentContactNumber": "+917898582512",
+  "courseId": "full stack",
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": null,
+  "mentorId": {
+    "$oid": "644b55fd170088794dafb027"
+  },
+  "__v": 0,
+  "mentors": [
+    "644b55fd170088794dafb027"
+  ]
+},
+{
+  "_id": {
+    "$oid": "644b531102455413bf90d047"
+  },
+  "studentName": "Dinesh kumar",
+  "studentEmail": "dineshkumar01@gmail.com",
+  "studentContactNumber": "+917898582648",
+  "courseId": "full stack",
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": null,
+  "__v": 0,
+  "mentors": [
+    "644b55fd170088794dafb027"
+  ]
+},
+{
+  "_id": {
+    "$oid": "644b56a8170088794dafb02d"
+  },
+  "studentName": "Sangeetha",
+  "studentEmail": "sangeethagmail.com",
+  "studentContactNumber": "+917898582098",
+  "courseId": "full stack",
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": null,
+  "mentors": [
+    "644b55fd170088794dafb027"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "644b56e0170088794dafb02f"
+  },
+  "studentName": "Mahendran",
+  "studentEmail": "mahendran119@gmail.com",
+  "studentContactNumber": "+917898582098",
+  "courseId": "Block chain",
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": null,
+  "mentors": [
+    "644b563b170088794dafb02b"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "644b5701170088794dafb031"
+  },
+  "studentName": "Poovizhi",
+  "studentEmail": "poovizhi16@gmail.com",
+  "studentContactNumber": "+917898582453",
+  "courseId": "Block chain",
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": null,
+  "mentors": [
+    "644b563b170088794dafb02b"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "644b578ece03cbf82a1aef93"
+  },
+  "studentName": "karunya",
+  "studentEmail": "karunya@gmail.com",
+  "studentContactNumber": "+91788972453",
+  "courseId": "Block chain",
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": "English",
+  "mentors": [
+    "644b563b170088794dafb02b",
+    "644b5618170088794dafb029"
+  ],
+  "__v": 0
+}]

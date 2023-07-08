@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "644b55fd170088794dafb027"
+  },
+  "mentorName": "Vishnu Vardhan",
+  "mentorEmail": "vishnuvardhan016gmail.com",
+  "mentorContactNumber": "+917898582712",
+  "skills": [
+    "MERN",
+    "REACT"
+  ],
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": "English",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "644b5618170088794dafb029"
+  },
+  "mentorName": "Rupan",
+  "mentorEmail": "rupan115gmail.com",
+  "mentorContactNumber": "+917898582235",
+  "skills": [
+    "MERN",
+    "REACT"
+  ],
+  "primaryLanguage": "Tamil",
+  "secondaryLanguage": "English",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "644b563b170088794dafb02b"
+  },
+  "mentorName": "shakshi",
+  "mentorEmail": "shakshi98@gmail.com",
+  "mentorContactNumber": "+917898582963",
+  "skills": [
+    "Block chain",
+    "Javascript"
+  ],
+  "primaryLanguage": "Hindhi",
+  "secondaryLanguage": "English",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a9102b2bcc4c94e168ce26"
+  },
+  "mentorName": "Vishnu",
+  "mentorEmail": "vishnu@gmail.com",
+  "mentorContactNumber": "+91788972453",
+  "coursesId": [],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT"
+  ],
+  "primaryLanguage": [
+    "Tamil"
+  ],
+  "secondaryLanguage": [
+    "English"
+  ],
+  "createdAt": {
+    "$date": "2023-07-08T07:28:41.296Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-08T07:28:41.296Z"
+  },
+  "__v": 0
+}]

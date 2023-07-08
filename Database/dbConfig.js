@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const URI = "mongodb://localhost:27017/";
-const DB_NAME = "foodozer";
+const DB_NAME = "zenclone";
 
 /**
  * CONNECT NODEJS WITH MONGOOSE
@@ -14,3 +14,5 @@ mongoose
   .catch((error) => {
     console.log("ERROR CONNECTINMG TO DATABASE::", error);
   });
+
+// npm i mongoose

@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 const RestaurantsController = require("./Controllers/Restaurants.controllers");
+const MentorController = require("./Controllers/Mentor.controller");
 
 app.use("/restaurants", RestaurantsController);
+app.use("/mentor", MentorController);
 
 /**
  * URL PARAMS
