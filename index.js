@@ -4,6 +4,11 @@
 const express = require("express");
 var bodyParser = require("body-parser");
 
+/**
+ * INJECTING DATABASE CONFIGURATIONS
+ */
+require("./Database/dbConfig");
+
 const httpServer = express();
 
 //IMPORTING APPS

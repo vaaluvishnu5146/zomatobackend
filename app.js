@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
-const fs = require("node:fs/promises"); // ASYNCHRONOUS
-const MahalController = require("./Controllers/mahal.controllers");
+const RestaurantsController = require("./Controllers/Restaurants.controllers");
 
-app.use("/mahal", MahalController);
+app.use("/restaurants", RestaurantsController);
 
 /**
  * URL PARAMS
