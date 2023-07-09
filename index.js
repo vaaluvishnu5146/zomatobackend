@@ -2,7 +2,13 @@
  * 1. CREATE BASIC EXPRESS SERVER
  */
 const express = require("express");
+const dotenv = require("dotenv");
 var bodyParser = require("body-parser");
+
+/**
+ * ENABLING ENVIRONMENT VARIABLES IN NODE PROJECT
+ */
+dotenv.config();
 
 /**
  * INJECTING DATABASE CONFIGURATIONS

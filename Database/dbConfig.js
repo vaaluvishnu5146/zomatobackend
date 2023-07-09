@@ -1,12 +1,15 @@
 const mongoose = require("mongoose");
-const URI = "mongodb://localhost:27017/";
-const DB_NAME = "zenclone";
-
+let URI;
+if (process.env.NODE_ENV === "development") {
+  URI = `mongodb://localhost:27017/zenclone`;
+} else {
+  URI = `mongodb+srv://${process.env.NODE_MONGO_DB_USERNAME}:${process.env.NODE_MONGO_DB_PASSWORD}@cluster0.ez75xfb.mongodb.net/${process.env.NODE_MONGO_DB_NAME}?retryWrites=true&w=majority`;
+}
 /**
  * CONNECT NODEJS WITH MONGOOSE
  */
 mongoose
-  .connect(`${URI}${DB_NAME}`)
+  .connect(`${URI}`)
   .then((response) => {
     // console.log("RESPONSE::", response);
     console.log("CONNECT TO::", URI);
