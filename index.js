@@ -27,6 +27,7 @@ httpServer.set("view engine", "ejs");
 // INJECTING MIDDLEWARES
 // CONFIGURE BODY PARSER MIDDLE WARE
 httpServer.use(bodyParser.json());
+httpServer.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = 5000;
 

@@ -3,11 +3,12 @@ const app = express();
 const RestaurantsController = require("./Controllers/Restaurants.controllers");
 const MentorController = require("./Controllers/Mentor.controller");
 const StudentController = require("./Controllers/Student.controller");
+const AuthenticationController = require("./Controllers/Authentication.controller");
 
 app.use("/restaurants", RestaurantsController);
 app.use("/mentor", MentorController);
 app.use("/student", StudentController);
-console.log(process.env);
+app.use("/user", AuthenticationController);
 /**
  * URL PARAMS
  * https://www.zomato.com/city/restaurants/5368745324673?deliveryType=delivery&payment=COD

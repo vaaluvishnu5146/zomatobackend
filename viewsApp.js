@@ -15,4 +15,10 @@ viewsApp.get("/about", (request, response, next) => {
   });
 });
 
+viewsApp.get("/login", (request, response, next) => {
+  response.render("pages/login", {
+    error: "",
+  });
+});
+
 module.exports = viewsApp;
