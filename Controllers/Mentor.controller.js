@@ -3,7 +3,7 @@ const MentorModel = require("../Model/Mentor.model");
 
 /**
  * ENDPOINT - GET ALL Mentor DATA
- * PATH TO ACTIVATE THIS METHOD = http://localhost:5000/api/restaurants/
+ * PATH TO ACTIVATE THIS METHOD = http://localhost:5000/api/mentors/
  */
 MentorController.get("/", (request, response, next) => {
   MentorModel.find()

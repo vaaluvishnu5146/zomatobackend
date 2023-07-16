@@ -1,5 +1,6 @@
 const AuthController = require("express").Router();
 const AuthModel = require("../Model/Auth.model");
+const { generateJWTToken } = require("../Utlities/JWT.utils");
 
 async function getMatchingUser(emailId = "") {
   return await AuthModel.find({ emailId: emailId })
@@ -99,13 +100,13 @@ AuthController.post("/create", (request, response, next) => {
  * HELPS USER TO CHECK WHETHER USER EMAIL ID AND PASSWORD IS MATCHING WITH DATABASE
  */
 AuthController.post("/login", async (request, response, next) => {
-  console.log(request.body);
   const { emailId, password, applicationType } = request.body;
   try {
     const matchingUser = await getMatchingUser(emailId);
-    console.log(request.body, matchingUser);
-
     if (matchingUser.length > 0 && matchingUser[0].password === password) {
+      const token = generateJWTToken({
+        role: ["customer"],
+      });
       if (applicationType === "webApp") {
         return response.render("pages/about", {
           pageName: "About US",
@@ -114,6 +115,7 @@ AuthController.post("/login", async (request, response, next) => {
       }
       return response.status(200).json({
         message: "Login SuccessFull!!!",
+        token: token,
       });
     } else {
       if (applicationType === "webApp") {

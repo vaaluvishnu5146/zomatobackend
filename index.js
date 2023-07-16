@@ -3,6 +3,7 @@
  */
 const express = require("express");
 const dotenv = require("dotenv");
+var cors = require("cors");
 var bodyParser = require("body-parser");
 
 /**
@@ -16,6 +17,7 @@ dotenv.config();
 require("./Database/dbConfig");
 
 const httpServer = express();
+httpServer.use(cors());
 
 //IMPORTING APPS
 const app = require("./app");
